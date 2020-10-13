@@ -33,45 +33,78 @@ a{
     padding: 25px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    word-spacing: 2px;
+}
+.top-section h1{
+    color:hsl(179, 62%, 43%);
+    padding-bottom: 25px;
+}
+.top-section h2{
+    padding-bottom: 25px;
+    color: hsl(71, 73%, 54%);
+}
+.top-section p{
+    color:hsl(218, 22%, 67%);
+}
+.bottom-section{
+    display: flex;
+    flex-direction: row;
+
+    
+    color:white;
+    
 }
 .left{
-    border-right: 2px solid white;
-    padding:25px;
+    width:100%;
+    padding:30px;
+    background:hsl(179, 62%, 40%);
+    border-bottom-left-radius: 10px;
+    
+    
+    
+}
+.left h2{
     
 }
 .left h2,p{
     padding-bottom: 10px;
 }
+.left .dollar{
+    font-size: 44px;
+    font-weight: 500;
+    padding-right: 8px;;
+}
 .btn-container{
-    padding-top:25px;
+    padding-top:45px;
+    text-align: center;
+    
    
   
 }
 .btn-container .btn{
     background:hsl(71, 73%, 54%);
     color:white;
-    padding: 10px 90px;
+    padding: 15px 90px;
     border-radius: 5px;
     box-shadow: 0 0 58px rgba(0, 0, 0, 0.3);
+    width:100%;
     
 }
 
 .right{
-padding: 25px;
+padding: 30px;
+background:hsl(179, 62%, 45%);
+width:100%;
+border-bottom-right-radius: 10px;
 
 }
 .right h2{
     padding-bottom:20px;
 }
-.bottom-section{
-    display: flex;
-    flex-direction: row;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background:hsl(179, 62%, 43%);
-    color:white;
-    
+.right ul li{
+    padding-bottom: 5px;
 }
+
 footer{
     position: fixed;
     bottom:0;
@@ -79,12 +112,34 @@ footer{
     
 }
 @media screen and (max-width:768px) {
+
+    .container{
+        width: 400px;
+        margin-bottom: 55px;
+    }
     .bottom-section{
         display: flex;
         flex-direction: column;
       
+       
+    }
+    .left{
+        border-bottom-left-radius: 0px;
+    }
+    .btn-container{
+        padding-bottom: 10px;;
         text-align: center;
     }
+    .btn-container .btn{
+       
+        padding: 15px 130px;
+      
+        
+    }
+    .right{
+        border-bottom-left-radius: 10px;
+    }
+  
     footer{
         position: fixed;
         bottom:0;
